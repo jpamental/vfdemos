@@ -1,0 +1,227 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+		<title>Intentional Typography: Design is Communication</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/setup.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/intentional_typography.css">
+		<!--[if lt IE 9]>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/fontfaceobserver.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/bnv4ubk.css">
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontB = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontC = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontD = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('essonnes-headline', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontF = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'normal'
+						});
+					var fontG = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'italic'
+						});
+					var fontH = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontI = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'italic'
+						});
+						
+			
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+        
+    </head>
+    <body>
+        		<!-- BEGIN web font toggle -->
+        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
+				<style>
+					.button {
+  					display: none;
+					  font-size: 14px;
+					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+					  text-decoration: none;
+					  font-weight: bold;
+					  color: #383838;
+					  background-color: #fefafa;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
+					  background-image: linear-gradient(#ffffff, #ede9e9);
+					  padding: 0.25em;
+					  border-radius: 0.5em;
+					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					}
+					.button:hover {
+					  background-color: #e4e1e1;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					}
+					.toggle-fonts {
+					  position: fixed; 
+					  top: 0.5em; 
+					  right: 0.5em; 
+					  z-index: 999;
+					}
+					.toggle-fonts.on:after {
+					  content: ": on";
+					}
+					.toggle-fonts.off:after {
+					  content: ": off";
+					}
+				</style>
+				
+
+				<script>
+					if (!'classList' in document.createElement('span')) {
+			            document.getElementById('c-unsupported').classList.remove('hidden');
+			            document.getElementById('execute').setAttribute('disabled', 'disabled');
+			         } else {
+			            document.getElementById('toggle-fonts').addEventListener('click', function() {
+							document.getElementById('toggle-fonts').classList.toggle('on');
+							document.getElementById('toggle-fonts').classList.toggle('off');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+			        	});
+         			}
+         		</script>
+
+        		<!-- END web font toggle -->
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+			        <h1 class="paper-name"><a href="index.html" title="Return to Home Page">Intentional Typography</a></h1>
+		        </div>
+	        </div>
+        </header>
+
+        <main class="content-area clearfix">
+	        <div class="section-content">
+		        <article class="article-detail initial">
+			        <header>
+				        <h1>Design is Communication</h1>
+								<h2>And if you can’t explain it, you’re not done designing it yet</h2>
+			        </header>
+			        <footer class="byline">
+				        By <span itemprop="name">Jason Pamental</span>
+				        | <time itemprop="datePublished" datetime="2016-09-12T12:00:15+0100" data-timestamp="1473678015000">
+Monday 12 September 2016 <span class="dateline-time">12.00&nbsp;BST</span>
+</time>
+			        </footer>
+              <p>A while back I wrote an article about one of my most influential experiences studying Graphic Design: the requirement of one of my instructors that we show up for any ‘first crit’ with no fewer than 30 thumbnails. But there was another experience, with another instructor, that perhaps had an even greater impact on me and on the way I guide and teach other designers.</p>
+              <blockquote class="right">Without explanation all we can do is evaluate execution, not effectiveness</blockquote>
+              <p>While <a href="#">Hee Mong Kim’s requirement</a> centered on the start of any project, Nancy Bockbrader’s signature element came at the finish: every project, no matter how big or small, had to include a paper explaining the ‘why’ behind the design decisions made in the course of the assignment. It could be as short as a paragraph or two, but if you couldn’t explain in clear language the reasoning for your typeface selection, color palette or any other visual language, you just weren’t done.</p>
+              <p>I’m not sure, but I may have been one of the only students who actually liked that part.</p>
+              <p>This forced clarity. It meant that even if you made up the explanation to fit the project, you still had to sell it. You had to be comfortable with the vocabulary of design, and how to use it convincingly and with rigor.</p>
+  		        <figure>
+  		        	<img src="img/matchbox_cover.jpeg" alt="Matchbox Cover" />
+  		        	<figcaption class="right-side">In this project I incorporated my paper into the design, mounting it inside the lid of a matchbox set</figcaption>
+  		        </figure>
+              <p class="section-end"></p>
+					   <p>It probably helped that I went to school a few years later than most, but I was ready to think, and do so out loud. I found by focusing on the explanation, it made the work stronger. Because when you have to say it out loud (even metaphorically), a weak idea has no place to hide. It becomes very apparent, very quickly, that the reasoning for a typeface choice, or the cultural relevance of a color palette, or the subtle symbolism embedded in a logo might just have been more for your benefit than the imaginary client’s.</p>
+					   <p>I’ve used this technique in classes I’ve taught, and even with design teams I’ve managed. Not for the client per se, but for our own internal review. This is even more important. When conducting an internal design review it’s critical that the designer be able explain why this solution is the best one.</p>
+  		        <figure class="medium right">
+  		        	<img src="img/matchbox_detail.jpeg" alt="Matchbox Innards" />
+  		        	<figcaption class="right-side">Detail of the matchbox set made of steel, oak & black-and-white photos on acetate</figcaption>
+  		        </figure>
+					   <p>There’s an important byproduct of this process: if every designer has to explain their work clearly and convincingly on a regular basis, they’re far more likely to do so with clients. This is critical, because in all but the rarest of cases, our clients aren’t designers. They don’t know what we know, or speak the same language we speak. We must be our own translators, and educate the client along the way. If we can’t bring them along to the view we have created, why should they believe us when we say it’s the right one?</p>
+					   <p>At Isovera we’ve been bringing practices like this back into our daily routines. When we talk about work, we talk about why it’s effective. When a designer works on a project, they present it to the client. If two designers are working, they each present their own. Not only does this provide opportunity to practice this kind of communication, it also gives them the credit they deserve for the work they have done. The solution comes from the team, so the team should have time in front of the client to shine.</p>
+              <p class="section-end"></p>
+              <p>Besides, as Mike Monteiro put it so well in <em>Design is a Job:</em> if you’re not the one selling it, you didn’t finish designing.</p>
+		        </article>
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-left">
+		        	<h4>Intentional Typography</h4>
+		        	<p><a href="#top">&raquo; Top of Page</a> | <a href="index.html">Main page</a></p>
+		        	<p>Text and images &copy; 2017 Jason Pamental. The code is <a href="https://github.com/jpamental/vfdemos">available on Github</a>.
+	        	</div>
+	        	<div class="footer-right">
+		        	<h4>Colophon</h4>
+		        	<p>This page is set in Essonnes, by <a href="http://jtdtype.com">James Todd</a> (both headings and body copy), and is <a href="https://typekit.com/fonts/essonnes">served by Typekit</a> with OpenType features enabled.</p>
+	        	</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <script src="js/vendor/jquery-1.12.0.min.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+
+    </body>
+</html>

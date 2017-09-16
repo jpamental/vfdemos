@@ -1,0 +1,231 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js lang-de" lang="de"> <!--<![endif]-->
+    <head>
+
+		<title>Design is Communication</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/setup.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/intentional_typography.css">
+		<!--[if lt IE 9]>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/fontfaceobserver.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/bnv4ubk.css">
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontB = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontC = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontD = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('essonnes-headline', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontF = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'normal'
+						});
+					var fontG = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'italic'
+						});
+					var fontH = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontI = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'italic'
+						});
+						
+			
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+        
+    </head>
+    <body>
+        		<!-- BEGIN web font toggle -->
+        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
+				<style>
+					.button {
+  					display: none;
+					  font-size: 14px;
+					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+					  text-decoration: none;
+					  font-weight: bold;
+					  color: #383838;
+					  background-color: #fefafa;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
+					  background-image: linear-gradient(#ffffff, #ede9e9);
+					  padding: 0.25em;
+					  border-radius: 0.5em;
+					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					}
+					.button:hover {
+					  background-color: #e4e1e1;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					}
+					.toggle-fonts {
+					  position: fixed; 
+					  top: 0.5em; 
+					  right: 0.5em; 
+					  z-index: 999;
+					}
+					.toggle-fonts.on:after {
+					  content: ": on";
+					}
+					.toggle-fonts.off:after {
+					  content: ": off";
+					}
+				</style>
+				
+
+				<script>
+					if (!'classList' in document.createElement('span')) {
+			            document.getElementById('c-unsupported').classList.remove('hidden');
+			            document.getElementById('execute').setAttribute('disabled', 'disabled');
+			         } else {
+			            document.getElementById('toggle-fonts').addEventListener('click', function() {
+							document.getElementById('toggle-fonts').classList.toggle('on');
+							document.getElementById('toggle-fonts').classList.toggle('off');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+			        	});
+         			}
+         		</script>
+
+        		<!-- END web font toggle -->
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+			        <h1 class="paper-name"><a href="index.html" title="Return to Home Page">Intentional Typography</a></h1>
+		        </div>
+	        </div>
+        </header>
+
+        <main class="content-area clearfix">
+	        <div class="section-content">
+		        <article class="article-detail initial">
+              <h1>Moby Dick oder Der weiße Wal</h1>
+
+    <h2>
+      Erstes Kapitel
+    </h2>
+    <p>Als ich vor einigen Jahren – wie lange es genau her ist, tut wenig zur Sache – so gut wie nichts in der Tasche hatte und von einem weiteren Aufenthalt auf dem Lande nichts mehr wissen wollte, kam ich auf den Gedanken, ein wenig zur See zu fahren, um die Welt des Meeres kennenzulernen. Man verliert auf diese Weise seinen verrückten Spleen, und dann ist es auch gut für die Blutzirkulation. Wenn man den scheußlichen Geschmack auf der Zunge nicht loswerden kann; wenn man das Frostgefühl eines feuchten und kalten Novembers auf der Seele hat; wenn man unwillkürlich vor jedem Sargmagazin stehenbleibt und jedem Leichenzug nachsieht, wenn man sich der Schwermut nicht mehr erwehren kann, daß man auf die Straße stürzen und vorsätzlich den Leuten den Hut vom Kopfe schlagen müßte, dann ist es allerhöchste Zeit, auf See zu gehen. Das ist für mich Ersatz für Pistole und Kugel.</p>
+    <p>Cato stürzte sich mit einer philosophischen Geste in sein Schwert. Ich entscheide mich in aller Ruhe für das Schiff. Das ist durchaus nichts Besonderes! Wenn sie es wüßten, so würden mit der Zeit mehr oder weniger alle dem Ozean mit denselben Gefühlen begegnen wie ich.</p>
+    <p>Da liegt von langen Kais eingefaßt, wie die Indianerinseln von Korallenriffen, unsere Inselstadt der Manhattoes. über die brandende See nimmt der Handel seinen Weg. Rechts und links laufen die Straßen nach dem Meere zu. Betrachte dir die Massen von Menschen, die ins Wasser starren! Mache an einem langweiligen Sonntagnachmittag einen Bummel durch die Stadt! Wenn du von Corlears Hook nach Coenties Slip und von da über Whitehall nach Norden gehst, siehst du nichts als Tausende von Menschen, die wie schweigsame Posten dastehen und traumverloren in das Meer hinausstarren. Sie haben sich gegen die Holzpflöcke gelegt, sie sitzen auf den Molenköpfen, sie sehen über die Bollwerke der Schiffe, die von China kommen, und wieder andere sehen hoch über die Takelage hinweg, um einen möglichst weiten Blick auf das Meer zu haben.</p>
+    <p>Alle sind Landratten. Wochentags haben sie mit Holz und Mörtel zu tun, da sind sie an Ladentische gebunden, an Bänke genagelt oder an Pulten befestigt. Was soll das bedeuten? Sind denn die grünen Felder nicht mehr da? Was tun sie hier?</p>
+    <p>Aber es kommen noch mehr Menschen. Sie gehen dicht an das Wasser heran, als wollten sie hineintauchen. Seltsam! Keiner begnügt sich mit einem Platz, wenn es nicht die äußerste Landseite ist; im Schutz der schattenspendenden Warenspeicher zu hocken, würde ihnen nicht gefallen. Sie müssen so nahe wie möglich an das Wasser heran, nur gerade, daß sie nicht hineinfallen. Von Straße und Promenade, von Gasse und Allee kommen sie von allen Himmelsgegenden herangeströmt. Hier versammelt sich alles. Bewirkt das die magnetische Anziehung der Kompaßnadel auf den Schiffen oder woher kommt es?</p>
+    <p class="section-end"></p>
+    <p>Noch einen Augenblick. Stelle dir vor, du bist auf dem Lande, im Gebirge, wo es Bergseen gibt. Schlage irgendeinen Weg ein, und zehn gegen eins treibt es dich in ein Tal, wo es Wasser gibt. Das ist etwas Wunderbares! Nimm einen in seine tiefsten Träume versenkten Menschen, stelle ihn auf die Beine und bringe ihn zum Gehen, so wird er dich unfehlbar dorthin führen, wo Wasser ist. Sollte dich in der großen amerikanischen Wüste dürsten, so mache dies Experiment, wenn zufällig bei deiner Karawane ein Professor der Metaphysik ist!</p>
+    <p>Alle Welt weiß, daß, wo gedacht wird, allemal Wasser damit verbunden ist. Aber lassen wir einen Maler zu Wort kommen!</p>
+    <p>Er will dich in der träumerischsten, stillsten und wunderbarsten Landschaft mit dem schönsten Schatten in dem Tal des Saco malen. Was braucht er dazu? Da sind Bäume, jeder davon ist hohl, als ob ein Klausner mitsamt dem Kreuz darin verborgen wäre. Dann eine Weide in aller Ruhe und eine Herde darauf im Schlummer. Und von der Hütte im Hintergrund steigt ein träumerischer Rauch auf. Hinten durch den Wald windet sich ein verschlungener Pfad, der zu den Ausläufern der in Blau getauchten Berge hinaufführt. Wenn auch das Bild so stimmungsvoll genug ist, und wenn auch die Kiefer ihre Nadeln wie Seufzer über den Kopf des Hirten fallen läßt, so würde doch viel fehlen, wenn das Auge des Hirten nicht auf den magischen Wasserlauf gerichtet wäre.</p>
+    <p>Mach' einen Ausflug in die Prärien im Juni! Wenn du auf zwanzig Meilen Weite bis an die Knie durch Tigerlilien watest, was ist da das einzige, was fehlt? Wasser! Nicht ein Tropfen ist da zu finden!</p>
+    <p>Wenn der Niagara nur ein Fall von herabstürzenden Sandmassen wäre, würde man dann tausend Meilen weit herkommen, um ihn zu sehen?</p>
+    <p>Warum überlegte es sich der arme Dichter aus Tennessee, der plötzlich eine Handvoll Silberstücke bekam, ob er sich einen neuen Rock kaufen sollte, den er so bitter nötig hatte, oder ob er das Geld für eine Fußreise nach Rockway Beach anlegen sollte?</p>
+    <p>Warum treibt es den gesunden Menschen mit gesunder Seele nach dem Meere? Warum empfindet man auf der ersten Seereise eine geheimnisvolle Erschütterung, wenn man von dem Schiff aus das Land nicht mehr sieht? Warum war den alten Persern das Meer heilig? Warum schufen die Griechen einen besonderen Gott des Meeres und ließen ihn den Bruder von Zeus sein? Das hatte einen tiefen Sinn! Und noch tiefer ist der Sinn in der Sage von Narzissus, der das wunderschöne Antlitz im Brunnen nicht umarmen konnte, deshalb hineintauchte und ertrank.</p>
+    <p>Wir alle sehen in den Flüssen und Meeren dasselbe Bild. Es ist das geheimnisvolle Bild des Lebens, das wir nicht fassen können.</p>
+    <p>Wenn ich nun sage, daß ich nicht als Passagier, wenn ich auch um Augen und Lungen anfange, besorgt zu werden, zur See gehe, so habe ich dafür meine Gründe. Schon weil man als Passagier Geld braucht, und ich keins habe. Was sind auch Passagiere, die seekrank werden, leicht die Haltung verlieren, des Nachts nicht schlafen können und mit der See nicht viel anzufangen wissen!</p>
+    <p>Ich möchte auch nicht als Kommandant, als Kapitän oder als Schiffskoch gehen. Ich überlasse den Ruhm und die mit hohen Ämtern verbundenen Ehrungen denen, die darauf Wert legen. Als Koch könnte ich mir ja viel Lob erwerben. Aber ich kann aus irgendwelchen Gründen dem Braten von Geflügel nicht viel Geschmack abgewinnen. Nicht, daß ich für das gebratene Geflügel, wenn es mit Butter geschmort und anständig gesalzen und gepfeffert ist, nicht zu haben wäre! Es gibt niemand, der vor einem gebratenen Stück Geflügel größeren Respekt, ja größere Ehrfurcht hätte als ich! Wie müssen die alten Ägypter in ihre gekochten Ibisvögel und gerösteten Flußpferde vernarrt gewesen sein, daß man die Mumien dieser Tiere als Zeichen der Verehrung in ihren kolossalen Backhäusern, den Pyramiden, vorfindet!</p>
+    <p>Wenn ich nun zur See gehe, so will ich einfacher Matrose sein, der seinen Platz am Mast hat, sich in die Vorderkajüte fallen läßt und von da bis zum Oberbramsegel emporsteigt. Natürlich werden sie mich wie eine Heuschrecke auf der Wiese von Spiere zu Spiere springen lassen. Selbstverständlich ist solch ein Leben alles andere als angenehm. Es wird einem schwer, wenn man von den van Renselears, den Randolphs oder den Hardicanutes, alten, ehrwürdigen Familien, abstammt. Und mit der Hand, die jetzt Teereimer anfaßt, hat man sich vor den längsten Bengels, als man noch zu Lande Lehrer war, Respekt verschafft. Es ist ein Übergang, der wohl zu merken ist. Man muß viel von einem Seneca und den Stoikern mitgekriegt haben, wenn man nicht mit der Wimper zuckt. Aber auch dieser Vorrat geht mit der Zeit drauf!</p>
+    <p>Was soll man tun, wenn ein alter Knacker von Kapitän mir befiehlt, einen Besen anzufassen und das Deck abzufegen? Was bedeutet diese Würdelosigkeit an dem Maßstab des Neuen Testamentes gemessen? Glaubst du etwa, daß der Erzengel Gabriel eine geringere Meinung von mir hat, weil ich dem alten Knacker auf der Stelle und ehrerbietig gehorcht habe? Wer ist kein Sklave? Nenne mir einen! Nun, was die alten Kapitäne mir auch befehlen mögen, wie sehr sie mich auch knuffen und zurechtstauchen, ich weiß, daß alles seinen Sinn hat. Ich weiß, daß jeder auf die eine oder die andere Weise vom physischen oder vom metaphysischen Standpunkte aus den gleichen Dienst leisten muß und daß der Knuff im Weltall weitergegeben wird. Alle sollten sich daher gegenseitig die Schulter reiben und den Mund halten!</p>
+    <p>Wenn ich Matrose werde, so geschieht es, weil ich für meine Mühe bezahlt werde. Hast du schon mal gehört, daß man Passagieren einen Pfennig gibt, im Gegenteil, Passagiere haben zu zahlen. Das ist es ja gerade, ob man zahlt oder bezahlt wird. Und das Zahlen ist das peinlichste, was uns die beiden Apfeldiebe aus dem Paradiese eingebrockt haben!</p>
+    <p>Aber das Bezahltwerden ist ein vornehmes und wundervolles Gefühl. Besonders wenn man bedenkt, daß das Geld die Wurzel allen Übels ist und kein Reicher in das Himmelreich kommt.</p>
+    <p>Und zu guter Letzt gehe ich als Matrose wegen der gesunden Beschäftigung und der reinen Luft, die auf dem Vorderkajütendeck weht. Du weißt wohl, daß Winde vom Vorderdeck häufiger sind, als Winde vom Achterdeck. Und somit bekommt der Kommandant die Winde am Achterdeck erst aus zweiter Hand, wenn sie an den Matrosen auf Vorderdeck vorbeigestrichen sind. Er glaubt, er atmet sie zuerst, aber weit gefehlt.</p>
+    <p>Aber weshalb mache ich ausgerechnet eine Walfischfahrt mit, da ich doch schon öfter auf einem Handelsschiff die See durchquert habe?</p>
+    <p>Da war als Haupttriebkraft der große Wal vorneweg. Dies urgewaltige und geheimnisvolle Ungeheuer zog meine Phantasie von jeher in seinen Bann. Dann waren es die wilden und fernen Meere, wo sein Riesenleib, diese schwimmende Insel, trieb. Ich hatte ein Verlangen nach den nicht auszudenkenden und namenlosen Gefahren, die um den Wal lauern. Diese und die Wunderwelt des Feuerlandes mit ihren tausend neuen Bildern und Klängen gaben meinem Verlangen neue Nahrung.</p>
+    <p>Anderen Menschen hätten diese Dinge nichts bedeutet. Aber ich habe nun mal eine unauslöschliche Sehnsucht nach den entlegenen Dingen! Ich schwärme davon, auf unerschlossenen Meeren herumzufahren und an der Küste der Barbaren zu landen. Ich weiß nicht, ob es das richtige ist. Aber ich möchte mich herzlich gern mit den Wilden herumschlagen, wenn es nicht geboten wäre, mit ihnen gut auszukommen, weil man nun mal auf ihre Gastfreundschaft angewiesen ist.</p>
+    <p>Ich habe nun Gründe genug angeführt und es verständlich gemacht, daß mir die Walfischfahrt sehr willkommen war. Die großen Schleusentore der Wunderwelt sprangen auf, und unter den wilden Visionen schwammen endlose Reihen von Walen, je zu zweien, auf mich zu. Und in ihrer Mitte ragte ein Riesenphantom mit einem großen Höcker wie ein Schneeberg in die Luft.</p>
+    
+
+
+
+		        </article>
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-left">
+		        	<h4>Intentional Typography</h4>
+		        	<p><a href="#top">&raquo; Top of Page</a> | <a href="index.html">Main page</a></p>
+		        	<p>The code is <a href="https://github.com/jpamental/vfdemos">available on Github</a>.
+	        	</div>
+	        	<div class="footer-right">
+		        	<h4>Colophon</h4>
+		        	<p>This page is set in Essonnes, by <a href="http://jtdtype.com">James Todd</a> (both headings and body copy), and is <a href="https://typekit.com/fonts/essonnes">served by Typekit</a> with OpenType features enabled.</p>
+	        	</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <script src="js/vendor/jquery-1.12.0.min.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+
+    </body>
+</html>

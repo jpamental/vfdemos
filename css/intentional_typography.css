@@ -1,0 +1,137 @@
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "essonnes-text", Georgia, "New Times Roman", serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+p {
+/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "essonnes-display", Georgia, "New Times Roman", serif;
+}
+
+h1 {
+	font-family: 'essonnes-display',Georgia, "New Times Roman", serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+h2 {
+	font-family: 'essonnes-display',Georgia, "New Times Roman", serif;
+}
+
+.byline {
+	font-family: 'essonnes-text',Georgia, "New Times Roman", serif;
+}
+
+blockquote {
+	font-family: "essonnes-display", Georgia, "New Times Roman", serif; 
+}
+
+h2 + p {
+  margin-top: 1em;
+}
+
+/* Section end styles */
+.section-end:after {
+  color: #777;
+	content: "\00a7";
+	display: block;
+	font-family: "essonnes-display", Georgia, "New Times Roman", serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1em;
+	text-align: center;
+}
+
+/* First-line styles */
+.section-end + p:first-line,
+p.first-line:first-line {
+	font-family: "essonnes-text", Georgia, "New Times Roman", serif;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+	content: "\2766";
+	display: inline;
+	font-family: "essonnes-display", Georgia, "New Times Roman", serif;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: .75;
+}
+
+/* Initial Cap styles */
+.article-detail.initial p:first-of-type:first-letter {
+	float: left; 
+	padding-right: 0.05em; 
+  font-family: 'essonnes-headline', Georgia, "New Times Roman", serif;
+  font-weight: bold;
+	font-size: 3em; 
+	line-height: 0.9em; 
+	
+}
+
+.article-detail.initial p:first-of-type:first-line {
+	text-transform: uppercase; 
+	
+}
+
+.lt-ie9 .article-detail.initial footer + p:first-letter {
+  font-size: 4em; 
+  font-family: 'essonnes-headline', Georgia, "New Times Roman", serif;
+	line-height: 0.9em; 
+	float: left; 
+	padding-right: 0.15em; 	
+}
+	@media screen and (min-width: 43.75em) { 
+		.article-detail.initial p:first-of-type:first-letter { 
+			font-size: 5em;
+      line-height: 0.825em; 
+      padding-right: 0.05em; 
+		}
+		.lt-ie9 .article-detail.initial footer + p:first-letter { 
+			font-size: 5em;
+		}
+	}
+	
+	@media screen and (min-width: 81.25em) { 
+		.article-detail.initial p:first-of-type:first-letter { 
+			font-size: 5em;
+      line-height: 0.87em; 
+		}
+	}
+	
+
+/* German styles */
+.lang-de p {
+/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: none;
+     word-break: none;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: none;
+   -moz-hyphens: none;
+    -ms-hyphens: none;
+        hyphens: none;
+}

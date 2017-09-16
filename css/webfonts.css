@@ -1,0 +1,45 @@
+/* Louvette Variable Font BETA */
+@font-face {
+  font-family: 'Louvette VF';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Var.ttf') format('truetype');
+  font-display: swap;
+}
+/* Louvette Variable Font Italic BETA */
+@font-face {
+  font-family: 'Louvette VF';
+  font-style: italic;
+  font-weight: 400;
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.ttf') format('truetype');
+  font-display: swap;
+}
+/* Amstelvar Variable Font */
+@font-face {
+  font-family: 'Amstelvar VF';
+  src: url('http://rwt.io/_demo_fonts/amstelvar/AmstelvarAlpha-VF.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+/* Gimlet Variable Font */
+@font-face {
+  font-family: 'Gimlet'; 
+  src: url('http://rwt.io/_demo_fonts/gimlet/Gimlet_Romans-VF.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+/* Output Variable Font */
+@font-face {
+  font-family: 'Output'; 
+  src: url('http://rwt.io/_demo_fonts/output/Output_Sans-VF.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+/* Input Variable Font */
+@font-face {
+  font-family: 'Input'; 
+  src: url('http://rwt.io/_demo_fonts/input/Input_Mono-VF.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

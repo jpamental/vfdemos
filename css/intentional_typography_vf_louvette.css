@@ -1,0 +1,164 @@
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+	font-weight: normal;
+  font-feature-settings: "liga" 1, "kern" 1;
+  font-variation-settings: 'wght' 300.001, 'yopq' 14.001, 'ytde' 14.001;
+}
+	@media screen and (min-width: 43.75em) { 
+    body, 
+    p, 
+    th, 
+    td, 
+    ul, 
+    li {
+      font-variation-settings: 'wght' 300.001, 'yopq' 14.001, 'ytde' 14.001;
+    }
+
+	}
+
+p {
+/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+}
+
+h1 {
+	font-family: 'Louvette VF',Georgia, "New Times Roman", serif;
+	font-weight: normal;
+  font-feature-settings: "liga" 1, "kern" 1;
+  font-variation-settings: 'wght' 999.999, 'yopq' 71.9984, 'ytde' 71.9984;
+}
+
+h2 {
+	font-family: 'Louvette VF',Georgia, "New Times Roman", serif;
+	font-variation-settings: 'wght' 400.03, 'yopq' 99.999, 'ytde' 99.999;
+	font-weight: normal;
+}
+
+.byline {
+	font-family: 'Louvette VF',Georgia, "New Times Roman", serif;
+}
+
+blockquote {
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif; 
+	font-variation-settings: 'wght' 300.03, 'yopq' 49.999, 'ytde' 99.999;
+}
+
+.footer-contact p {
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+}
+
+h2 + p {
+  margin-top: 1em;
+}
+
+/* Section end styles */
+.section-end:after {
+  color: #777;
+	content: "\00a7";
+	display: block;
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1em;
+	text-align: center;
+}
+
+/* First-line styles */
+.section-end + p:first-line,
+p.first-line:first-line {
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+  font-variation-settings: 'wght' 800.001, 'yopq' 14.001, 'ytde' 14.001;
+	font-variant: small-caps;
+}
+
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+	content: "\2766";
+	display: inline;
+	font-family: "Louvette VF", Georgia, "New Times Roman", serif;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 300;
+	line-height: .75;
+}
+
+/* Initial Cap styles */
+.article-detail.initial p:first-of-type:first-letter {
+	float: left; 
+	padding-right: 0.05em; 
+  font-family: 'Louvette VF', Georgia, "New Times Roman", serif;
+  font-variation-settings: 'wght' 999.999, 'yopq' 71.9984, 'ytde' 71.9984;
+	font-size: 3.5em; 
+	line-height: 0.9em;
+	margin-bottom: -.1em; 
+	
+}
+
+.article-detail.initial p:first-of-type:first-line {
+	text-transform: uppercase; 
+	
+}
+
+.lt-ie9 .article-detail.initial footer + p:first-letter {
+  font-size: 4em; 
+  font-family: 'Louvette VF', Georgia, "New Times Roman", serif;
+	line-height: 0.9em; 
+	float: left; 
+	padding-right: 0.15em; 	
+}
+	@media screen and (min-width: 43.75em) { 
+		.article-detail.initial p:first-of-type:first-letter { 
+			font-size: 5.5em;
+      line-height: 0.825em; 
+      padding-right: 0.05em; 
+      padding-top: .03em;
+		}
+		.lt-ie9 .article-detail.initial footer + p:first-letter { 
+			font-size: 5em;
+		}
+	}
+	
+	@media screen and (min-width: 81.25em) { 
+		.article-detail.initial p:first-of-type:first-letter { 
+			font-size: 6em;
+      line-height: 0.7em;
+      margin-bottom: -.1em;
+      padding-top: .05em; 
+		}
+	}
+	
+
+/* German styles */
+.lang-de p {
+font-variation-settings: 'wght' 87.9896, 'wdth' 367.013, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: none;
+     word-break: none;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: none;
+   -moz-hyphens: none;
+    -ms-hyphens: none;
+        hyphens: none;
+}
+

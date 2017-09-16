@@ -1,0 +1,192 @@
+
+/*! site styles */
+/*
+	Breakpoints
+	s-tab:   25em / 400px 
+	l-tab:   43.75em / 700px
+	desk:    56.25em / 900px
+	m-desk:  71.875em / 1150px
+	l-desk:  81.25em / 1300px
+
+MQ Block:
+
+@media only screen and (min-width: 25em) {
+    
+}
+
+@media only screen and (min-width: 43.75em) {
+    
+}
+
+@media only screen and (min-width: 56.25em) {
+    
+}
+
+@media only screen and (min-width: 81.25em) {
+    
+}
+
+Colors:
+
+Orange: #DC5705;
+Lightest Blue: #B7D0E8;
+Light Blue: #8BB1DD;
+Blue: #4A90E2;
+Dark Blue: #35475B;
+
+Gray: #494949;
+
+Fonts: 
+
+Serif: "Alegreya", Georgia, "New Times Roman", serif;
+Sans-serif: "Fira Sans", Helvetica, Arial, sans-serif;
+
+
+*/
+
+/* ==========================================================================
+   HTML Elements
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.section-content {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: 25em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    .section-content {
+		    max-width: 75%;
+	    }
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    .section-content {
+		    max-width: 72%;
+	    }
+	}
+	
+	@media only screen and (min-width: 71.875em) {
+	    .section-content {
+		    max-width: 54em;
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    .section-content {
+		    max-width: 64em;
+	    }
+	}
+
+.section-content.border-top {
+	border-top: double 3px #a1a1a1;
+}
+.content-area {
+	clear: both;
+}
+
+.columns {
+}
+	@media only screen and (min-width: 43.75em) {
+		.columns {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+			-webkit-column-gap: 2em;
+			-moz-column-gap: 2em;
+			column-gap: 2em;
+		}
+	}
+	@media only screen and (min-width: 56.25em) {
+		.columns {
+			column-gap: 2em;
+			max-width: none;
+		}
+	}
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+
+/* header styles */
+#banner {
+	background-size: 1em 1em;
+	background-color: #26435e;
+	background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	color: #ffffff;
+	padding-bottom: 1em;
+	position: relative;
+	z-index: 10;
+}
+
+.branding {
+	margin: 0;
+	padding: 0.25em 0;
+}
+
+
+/* /header styles */
+
+
+
+/* footer styles */
+
+#footer {
+	background-color: #26435e;
+	color: #ffffff;
+	padding-top: 3em;
+	padding-bottom: 5em;
+}
+
+.footer-left, 
+.footer-right {
+	padding-bottom: 1em;
+	width: 100%;
+	vertical-align: top;
+}
+	@media only screen and (min-width: 43.75em) {
+	    .footer-left {
+		    display: inline-block;
+		    width: 49.5%;
+	    }
+	    .footer-right {
+		    display: inline-block;
+		    width: 49.5%;
+	    }
+	}
+
+
+/* /footer styles */
+
+/* content area styles */
+.content-area {
+    padding-bottom: 5em;
+}
+
+/* /content area styles */
+
+

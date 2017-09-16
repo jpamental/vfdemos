@@ -1,0 +1,217 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+		<title>Intentional Typography</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/setup.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/intentional_typography.css">
+		<!--[if lt IE 9]>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/fontfaceobserver.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/bnv4ubk.css">
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontB = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontC = new FontFaceObserver('essonnes-text', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontD = new FontFaceObserver('essonnes-text', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('essonnes-headline', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontF = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'normal'
+						});
+					var fontG = new FontFaceObserver('essonnes-display', {
+							weight: 300,
+							style: 'italic'
+						});
+					var fontH = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontI = new FontFaceObserver('essonnes-display', {
+							weight: 700,
+							style: 'italic'
+						});
+						
+			
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+        
+    </head>
+    <body>
+        		<!-- BEGIN web font toggle -->
+        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
+				<style>
+					.button {
+  					display: none;
+					  font-size: 14px;
+					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+					  text-decoration: none;
+					  font-weight: bold;
+					  color: #383838;
+					  background-color: #fefafa;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
+					  background-image: linear-gradient(#ffffff, #ede9e9);
+					  padding: 0.25em;
+					  border-radius: 0.5em;
+					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					}
+					.button:hover {
+					  background-color: #e4e1e1;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					}
+					.toggle-fonts {
+					  position: fixed; 
+					  top: 0.5em; 
+					  right: 0.5em; 
+					  z-index: 999;
+					}
+					.toggle-fonts.on:after {
+					  content: ": on";
+					}
+					.toggle-fonts.off:after {
+					  content: ": off";
+					}
+				</style>
+				
+
+				<script>
+					if (!'classList' in document.createElement('span')) {
+			            document.getElementById('c-unsupported').classList.remove('hidden');
+			            document.getElementById('execute').setAttribute('disabled', 'disabled');
+			         } else {
+			            document.getElementById('toggle-fonts').addEventListener('click', function() {
+							document.getElementById('toggle-fonts').classList.toggle('on');
+							document.getElementById('toggle-fonts').classList.toggle('off');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+			        	});
+         			}
+         		</script>
+
+        		<!-- END web font toggle -->
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+			        <h1 class="paper-name"><a href="index.html" title="Return to Home Page">Intentional Typography</a></h1>
+		        </div>
+	        </div>
+        </header>
+
+        <main class="content-area clearfix">
+	        <div class="section-content">
+		        <article class="article-detail initial">
+			        <header>
+				        <h1>Intentional Typography</h1>
+								<h2>A series of typographic system and variable font demonstration pages</h2>
+			        </header>
+
+              <p>These pages are intended to showcase both typographic techniques applied to the web and the emerging Variable Font format. The typefaces featured are courtesy of their respective designers as noted. It would be remiss of me to not call out <a href="http://cjtype.com">CJ Dunn</a> and <a href="https://djr.com">David Jonathan Ross</a> in particular for their enthusiasm and generosity in beginning these demonstrations.</p>
+              <p>If you're interested in contributing or having your own variable fonts featured, please <a href="mailto:jason@rwt.io">get in touch</a> or contribute a pull request to the <a href="http://rwt.io/_demo_fonts/">repository on Github</a>. The fonts are not included; they are being served from my website but can be included from other sources as needed.</p>
+              <h2>Sample pages</h2>
+              <ul>
+                <li><a href="webfonts-essonnes.html">Design is Communication</a> featuring Essonnes (standard web fonts)</li>
+                <li><a href="mobydick.html">Moby Dick, Chapter 1</a>, featuring Essonnes (standard web fonts)</li>
+                <li><a href="mobydick-de.html">Moby Dick, Chapter 1</a> (in German), featuring Essonnes (standard web fonts)</li>
+                <li><a href="mobydick-vf-louvette.html">Moby Dick, Chapter 1</a>, featuring Louvette (variable font)</li>
+                <li><a href="mobydick-vf-djr.html">Moby Dick, Chapter 1</a>, featuring Gimlet & Output (variable font)</li>
+                <li><a href="mobydick-vf.html">Moby Dick, Chapter 1</a>, featuring Louvette & Amstelvar (variable fonts)</li>
+                <li><a href="mobydick-de-vf-louvette.html">Moby Dick, Chapter 1</a> (in German), featuring Louvette (variable font)</li>
+                <li><a href="mobydick-de-vf.html">Moby Dick, Chapter 1</a> (in German), featuring Louvette & Amstelvar (variable fonts)</li>
+                <li><a href="mobydick-vf-final.html">Moby Dick, Chapter 1</a> (final), featuring Louvette & Amstelvar (variable fonts)</li>
+              </ul>
+              <p><em>With regard to the German language pages: if you find spelling issues, please let me know so I can correct them! I've included the text in order to make an example case for different typographic treatments based on language.</em></p>
+		        </article>
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-left">
+		        	<h4>Intentional Typography</h4>
+		        	<p><a href="#top">&raquo; Top of Page</a> | <a href="index.html">Main page</a></p>
+		        	<p>Text and images &copy; 2017 Jason Pamental. The code is <a href="https://github.com/jpamental/vfdemos">available on Github</a>.
+	        	</div>
+	        	<div class="footer-right">
+		        	<h4>Colophon</h4>
+		        	<p>This page is set in Essonnes, by <a href="http://jtdtype.com">James Todd</a> (both headings and body copy), and is <a href="https://typekit.com/fonts/essonnes">served by Typekit</a> with OpenType features enabled.</p>
+	        	</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <script src="js/vendor/jquery-1.12.0.min.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+
+    </body>
+</html>
