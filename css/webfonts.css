@@ -3,7 +3,9 @@
   font-family: 'Louvette VF';
   font-style: normal;
   font-weight: 400;
-  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Var.ttf') format('truetype');
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff') format('woff'), /* Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
 }
 /* Louvette Variable Font Italic BETA */
@@ -11,7 +13,9 @@
   font-family: 'Louvette VF';
   font-style: italic;
   font-weight: 400;
-  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.ttf') format('truetype');
+  src: url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.woff') format('woff'), /* Modern Browsers */
+       url('http://rwt.io/_demo_fonts/louvette/LouvetteBETA_Italic_Var.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
 }
 /* Amstelvar Variable Font */
